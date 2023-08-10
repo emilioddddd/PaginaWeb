@@ -1,12 +1,14 @@
 import { Configuration, OpenAIApi } from "openai";
 import * as dotenv from 'dotenv';
+//import { Configuration, OpenAIApi } from "../node_modules/openai";
+//import * as dotenv from '../node_modules/dotenv';
 dotenv.config();
 
 export async function fetchOpenAIResponse(reponse) {
     const configuration = new Configuration({
         
         /*apiKey: process.env.OPENAI_API_KEY,*/
-        apiKey: "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",
+        apiKey: "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",
     });
 
     const openai = new OpenAIApi(configuration);
@@ -25,4 +27,4 @@ export async function fetchOpenAIResponse(reponse) {
 }
 
 // Llamar a la función principal
-//fetchOpenAIResponse();
+fetchOpenAIResponse("hola");
